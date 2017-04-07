@@ -1,0 +1,12 @@
+<resources>
+
+    <declare-styleable name="EditViewWithDeleteButton">
+        <attr name="text" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawavleBg" format="reference" />
+        <attr name="inputType" format="integer" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+   
+</resources>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_selected" >
+
+    <include
+        android:id="@+id/common_title_layout"
+        layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_title_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center" >
+
+            <com.huan.demomaster.adapter.EditViewWithDeleteButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ev_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/search_bar_edit_selector"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textColor="@color/white"
+                app:drawableLeft="@drawable/search_bar_icon_normal"
+                app:hint="请输入要查询的demo名称"
+                app:inputType="0x00001002" />
+        </LinearLayout>
+
+        <com.huan.demomaster.pullrefresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_title_layout" >
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.huan.demomaster.SwipeMenuListView.SwipeMenuListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/gray"
+                android:dividerHeight="1px" >
+            </com.huan.demomaster.SwipeMenuListView.SwipeMenuListView>
+
+            <include layout="@layout/loadmore_foot" />
+        </com.huan.demomaster.pullrefresh.PullToRefreshLayout>
+    </LinearLayout>
+
+</RelativeLayout>

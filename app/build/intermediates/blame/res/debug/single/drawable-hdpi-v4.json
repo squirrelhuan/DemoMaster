@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\blue_front.jpg",
+        "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable-hdpi\\blue_front.jpg"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\blue_back.jpg",
+        "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable-hdpi\\blue_back.jpg"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_bg.jpg",
+        "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable-hdpi\\login_bg.jpg"
+    }
+]

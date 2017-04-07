@@ -8,6 +8,7 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.support.annotation.IntDef;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.util.DisplayMetrics;
 import android.util.Property;
 import android.view.Display;

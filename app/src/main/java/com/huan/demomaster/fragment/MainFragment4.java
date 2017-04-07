@@ -1,25 +1,5 @@
 package com.huan.demomaster.fragment;
 
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.activity.MainActivity;
-import com.huan.demomaster.activity.WelcomeActivity;
-import com.huan.demomaster.activity.user.LoginActivity;
-import com.huan.demomaster.activity.user.MyCollectionActivity;
-import com.huan.demomaster.activity.user.MyDownLoadActivity;
-import com.huan.demomaster.activity.user.MyNewsActivity;
-import com.huan.demomaster.activity.user.MySettingActivity;
-import com.huan.demomaster.activity.user.UserInfoActivity;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.fragment.base.BaseFragment;
-import com.huan.demomaster.utils.UserDao;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -27,11 +7,22 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.huan.demomaster.MyApp;
+import com.huan.demomaster.R;
+import com.huan.demomaster.activity.user.LoginActivity;
+import com.huan.demomaster.activity.user.MyCollectionActivity;
+import com.huan.demomaster.activity.user.MyDownLoadActivity;
+import com.huan.demomaster.activity.user.MyNewsActivity;
+import com.huan.demomaster.activity.user.MySettingActivity;
+import com.huan.demomaster.activity.user.UserInfoActivity;
+import com.huan.demomaster.fragment.base.BaseFragment;
+import com.huan.demomaster.utils.UserDao;
 
 public class MainFragment4 extends BaseFragment implements OnItemClickListener,
 		OnClickListener, OnItemLongClickListener {
@@ -56,7 +47,7 @@ public class MainFragment4 extends BaseFragment implements OnItemClickListener,
 			tv_username.setText("未登录");
 			iv_user_head.setImageResource(R.drawable.ic_launcher);
 			if (UserDao.getPassWord(getActivity())!=null&&!UserDao.getPassWord(getActivity()).equals("")) {
-				final String username = UserDao.getUserName(getActivity());
+				/*final String username = UserDao.getUserName(getActivity());
 				final String password = UserDao.getPassWord(getActivity());
 				RequestParams params = new RequestParams();
 				params.put("username", username);
@@ -90,7 +81,7 @@ public class MainFragment4 extends BaseFragment implements OnItemClickListener,
 								showToast("login fail...");
 								hideProgress();
 							}
-						});
+						});*/
 			}
 		}
 		super.onResume();

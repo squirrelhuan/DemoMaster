@@ -1,26 +1,5 @@
 package com.huan.demomaster.activity.user;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.activity.BaseActivity;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.Constants;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.utils.ImageUtils;
-import com.huan.demomaster.utils.UserDao;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -35,13 +14,24 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.huan.demomaster.MyApp;
+import com.huan.demomaster.R;
+import com.huan.demomaster.activity.BaseActivity;
+import com.huan.demomaster.constances.Constants;
+import com.huan.demomaster.utils.ImageUtils;
+import com.huan.demomaster.utils.UserDao;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class UserInfoActivity extends BaseActivity implements OnClickListener {
 	private static final String LOG_TAG = "CGQ";
@@ -361,13 +351,13 @@ public class UserInfoActivity extends BaseActivity implements OnClickListener {
 				String.valueOf(System.currentTimeMillis()));
 		Log.e("imagePath", imagePath + "");
 		if (imagePath != null) {
-			uploadFile(imagePath);
+			//uploadFile(imagePath);
 		} else {
 			showToast("图片处理失败");
 		}
 	}
 
-	/** 上传文件 */
+	/** 上传文件 *//*
 	private void uploadFile(String path) {
 		showProgress("正在上传头像...", false);
 		RequestParams params = new RequestParams();
@@ -408,6 +398,6 @@ public class UserInfoActivity extends BaseActivity implements OnClickListener {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 }

@@ -1,10 +1,5 @@
 package com.huan.demomaster.activity;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -44,6 +39,11 @@ import com.huan.demomaster.fragment.MainFragment2;
 import com.huan.demomaster.fragment.MainFragment3;
 import com.huan.demomaster.fragment.MainFragment4;
 import com.huan.demomaster.view.Rotatable;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends BaseActivity implements
 		OnCheckedChangeListener, OnClickListener {
@@ -108,13 +108,13 @@ public class MainActivity extends BaseActivity implements
 		// 设置启动之后展示的fragment
 		viewPager.setCurrentItem(0);
 		viewPager.setOffscreenPageLimit(4);
-		viewPager.addOnPageChangeListener(mOnPageChangeListener);
+		viewPager.setOnPageChangeListener(mOnPageChangeListener);
 		// main_radio_group.check(R.id.main_radio_button_1);
 
 		boolean canUpdate = MyApp.getPreferencesService().getBoolean(
 				"UpDateApp", true);
 		if (canUpdate) {
-			MyApp.instance.updateApp(MainActivity.this);
+			//MyApp.instance.updateApp(MainActivity.this);
 		}
 
 		/*initView();

@@ -1,10 +1,5 @@
 package com.huan.demomaster.activity.demo;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.Header;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,18 +7,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.alibaba.fastjson.JSON;
 import com.huan.demomaster.MyApp;
 import com.huan.demomaster.R;
 import com.huan.demomaster.activity.BaseActivity;
 import com.huan.demomaster.bean.ADInfo;
 import com.huan.demomaster.bean.Demo;
-import com.huan.demomaster.constances.NetConstants;
 import com.huan.demomaster.utils.ViewFactory;
 import com.huan.demomaster.view.cycleviewpager.CycleViewPager;
 import com.huan.demomaster.view.cycleviewpager.CycleViewPager.ImageCycleViewListener;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DemoDetailActivity extends BaseActivity implements OnClickListener {
 
@@ -127,7 +121,7 @@ public class DemoDetailActivity extends BaseActivity implements OnClickListener 
 
 	};
 	
-	public void getNetData() {
+	/*public void getNetData() {
 		RequestParams params = new RequestParams();
 		params.put("id", demo.getId());
 		MyApp.getNet().getReq(NetConstants.getDemoById, params,
@@ -147,7 +141,7 @@ public class DemoDetailActivity extends BaseActivity implements OnClickListener 
 					}
 
 				});
-	}
+	}*/
 
 	private void refreshUI(Demo demo2) {
 		tv_title.setText(demo2.getName());

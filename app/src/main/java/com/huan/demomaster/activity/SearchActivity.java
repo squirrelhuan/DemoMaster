@@ -3,7 +3,6 @@ package com.huan.demomaster.activity;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.http.Header;
 
 import com.alibaba.fastjson.JSON;
 import com.huan.demomaster.MyApp;

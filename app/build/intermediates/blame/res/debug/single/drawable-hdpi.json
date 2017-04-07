@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\load_failed.png",
-        "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable-hdpi\\load_failed.png"
-    },
-    {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\user_icon_blue.png",
         "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable-hdpi\\user_icon_blue.png"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\load_failed.png",
+        "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable-hdpi\\load_failed.png"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\gom.png",

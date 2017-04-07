@@ -1,28 +1,5 @@
 package com.huan.demomaster.fragment;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
-import com.huan.demomaster.activity.news.NewsDetailActivity;
-import com.huan.demomaster.activity.topic.TopicDetailActivity;
-import com.huan.demomaster.adapter.MySimpleListAdapter;
-import com.huan.demomaster.adapter.MyTopicListAdapter;
-import com.huan.demomaster.bean.News;
-import com.huan.demomaster.bean.Topic;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.fragment.base.BaseFragment;
-import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
-import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -32,6 +9,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
+
+import com.huan.demomaster.R;
+import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
+import com.huan.demomaster.activity.topic.TopicDetailActivity;
+import com.huan.demomaster.adapter.MyTopicListAdapter;
+import com.huan.demomaster.bean.Topic;
+import com.huan.demomaster.fragment.base.BaseFragment;
+import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
+import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainFragment3 extends BaseFragment implements 
 		OnItemClickListener, OnClickListener, OnItemLongClickListener {
@@ -60,24 +49,24 @@ public class MainFragment3 extends BaseFragment implements
 		mPullToRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
 			@Override
 			public void onRefresh(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout.refreshFinish(PullToRefreshLayout.SUCCEED);
 			}
 
 			@Override
 			public void onLoadMore(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout.loadmoreFinish(PullToRefreshLayout.SUCCEED);
 			}
 		});
 		
 		listView = (SwipeMenuListView) findViewById(R.id.list_view);
-		getNetData();
+		//getNetData();
 		listView.setOnItemClickListener(this);
 		listView.setOnItemLongClickListener(this);
 	}
-    public void getNetData(){
-    /*	for (int i = 0; i < 5; i++) {
+    /*public void getNetData(){
+    *//*	for (int i = 0; i < 5; i++) {
 			Topic talk = new Topic();
 			talk.setAuthor(MyApp.instance.getUser());
 			talk.setTitle("内测招募啦，快啦报名吧！");
@@ -86,7 +75,7 @@ public class MainFragment3 extends BaseFragment implements
 			mList.add(talk);
 		}
     	adapter = new MyTalkListAdapter(getActivity(), mList);
-		listView.setAdapter(adapter);*/
+		listView.setAdapter(adapter);*//*
     	RequestParams params = new RequestParams();
 		//params.put("name", "6");
 		MyApp.getNet().getReq(NetConstants.getTopic, params, new AsyncHttpResponseHandler() {
@@ -113,7 +102,7 @@ public class MainFragment3 extends BaseFragment implements
 				}
 			}
 		});
-    }
+    }*/
 	@Override
 	public void onClick(View arg0) {
 		

@@ -1,25 +1,5 @@
 package com.huan.demomaster.fragment;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.activity.demo.DemoDetailActivity;
-import com.huan.demomaster.activity.demo.DemoListActivity;
-import com.huan.demomaster.adapter.MySimpleGridAdapter;
-import com.huan.demomaster.bean.Plate;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.fragment.base.BaseFragment;
-import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
-import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
-import com.huan.demomaster.pullrefresh.PullableGridView;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -29,6 +9,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
+
+import com.huan.demomaster.R;
+import com.huan.demomaster.activity.demo.DemoListActivity;
+import com.huan.demomaster.adapter.MySimpleGridAdapter;
+import com.huan.demomaster.bean.Plate;
+import com.huan.demomaster.fragment.base.BaseFragment;
+import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
+import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
+import com.huan.demomaster.pullrefresh.PullableGridView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainFragment2 extends BaseFragment implements OnItemClickListener,
 		OnClickListener, OnItemLongClickListener {
@@ -62,24 +54,24 @@ public class MainFragment2 extends BaseFragment implements OnItemClickListener,
 			@Override
 			public void onRefresh(PullToRefreshLayout pullToRefreshLayout) {
 				mPullToRefreshLayout.refreshFinish(PullToRefreshLayout.SUCCEED);
-				getNetData();
+				//getNetData();
 			}
 
 			@Override
 			public void onLoadMore(PullToRefreshLayout pullToRefreshLayout) {
 				mPullToRefreshLayout
 						.loadmoreFinish(PullToRefreshLayout.SUCCEED);
-				getNetData();
+				//getNetData();
 			}
 		});
 
 		GridView = (PullableGridView) findViewById(R.id.grid_view);
-		getNetData();
+		//getNetData();
 		GridView.setOnItemClickListener(this);
 		GridView.setOnItemLongClickListener(this);
 	}
 
-	public void getNetData() {
+	/*public void getNetData() {
 		RequestParams params = new RequestParams();
 		MyApp.getNet().getReq(NetConstants.getDemoPlate, params,
 				new AsyncHttpResponseHandler() {
@@ -107,7 +99,7 @@ public class MainFragment2 extends BaseFragment implements OnItemClickListener,
 						}
 					}
 				});
-	}
+	}*/
 
 	@Override
 	public void onClick(View arg0) {

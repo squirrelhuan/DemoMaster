@@ -1,17 +1,16 @@
 package com.huan.demomaster.activity.user;
 
-import org.apache.http.Header;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
 
 import com.huan.demomaster.MyApp;
 import com.huan.demomaster.R;
 import com.huan.demomaster.activity.BaseActivity;
 import com.huan.demomaster.adapter.ToggleButton;
 import com.huan.demomaster.adapter.ToggleButton.OnToggleChanged;
-
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.LinearLayout;
 
 public class MySettingActivity extends BaseActivity implements 
 		 OnClickListener {

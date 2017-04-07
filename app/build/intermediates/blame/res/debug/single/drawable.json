@@ -1,19 +1,31 @@
 [
     {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg_search2.xml",
         "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable\\btn_bg_search2.xml"
     },
     {
-        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ll_btn.xml",
@@ -25,7 +37,7 @@
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_back_background.xml",
@@ -37,7 +49,7 @@
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\richtextedit_cursor_shape.xml",
@@ -45,19 +57,31 @@
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tv_bg_stroke_red.xml",
         "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable\\tv_bg_stroke_red.xml"
     },
     {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg_stroke_white_pressed.xml",
@@ -69,7 +93,7 @@
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radiobutton_zan.xml",
@@ -81,11 +105,11 @@
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg_stroke_white.xml",
@@ -100,6 +124,10 @@
         "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable\\color_text_selected.xml"
     },
     {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_selector.xml",
         "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable\\menu_selector.xml"
     },
@@ -108,12 +136,32 @@
         "source": "D:\\workspaceAS\\DemoMaster\\app\\src\\main\\res\\drawable\\layerlist_circle_mask.xml"
     },
     {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radiobutton_user.xml",
@@ -121,7 +169,7 @@
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\35007e3eaa8f212ba5855e4b27c3f043c219a60b\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "D:\\workspaceAS\\DemoMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radiobutton_category.xml",

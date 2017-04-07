@@ -1,27 +1,18 @@
 package com.huan.demomaster.activity.demo;
 
-import java.util.Date;
-
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.activity.BaseActivity;
-import com.huan.demomaster.bean.News;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.utils.UserDao;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+
+import com.huan.demomaster.MyApp;
+import com.huan.demomaster.R;
+import com.huan.demomaster.activity.BaseActivity;
+import com.huan.demomaster.bean.News;
+
+import java.util.Date;
 
 public class DemoAddActivity extends BaseActivity implements OnClickListener {
 
@@ -67,7 +58,7 @@ public class DemoAddActivity extends BaseActivity implements OnClickListener {
 				news.setAuthor(MyApp.instance.getUser());
 				news.setTime(new Date());
 				news.setOriginal(isOriginal);
-				submitNews(news);
+				//submitNews(news);
 			}
 		});
 		radioGroup = (RadioGroup) findViewById(R.id.rg_isOriginal);
@@ -83,7 +74,7 @@ public class DemoAddActivity extends BaseActivity implements OnClickListener {
 		});
 	}
 
-	public void submitNews(News news) {
+	/*public void submitNews(News news) {
 		showProgress("提交中...");
 		RequestParams params = new RequestParams();
 		params.put("username", UserDao.getUserName(this));
@@ -113,7 +104,7 @@ public class DemoAddActivity extends BaseActivity implements OnClickListener {
 						}
 					}
 				});
-	}
+	}*/
 
 	@Override
 	public void onClick(View v) {

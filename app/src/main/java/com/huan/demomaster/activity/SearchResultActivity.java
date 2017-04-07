@@ -1,38 +1,26 @@
 package com.huan.demomaster.activity;
 
-import java.util.ArrayList;
-import java.util.List;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
 import com.huan.demomaster.R;
 import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
 import com.huan.demomaster.activity.demo.DemoDetailActivity;
 import com.huan.demomaster.adapter.DemoListAdapter;
 import com.huan.demomaster.adapter.EditViewWithDeleteButton;
 import com.huan.demomaster.bean.Demo;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.NetConstants;
 import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
 import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
-import com.huan.demomaster.utils.UserDao;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SearchResultActivity extends BaseActivity implements
 		OnItemClickListener, OnClickListener, OnItemLongClickListener {
@@ -61,13 +49,13 @@ public class SearchResultActivity extends BaseActivity implements
 		mPullToRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
 			@Override
 			public void onRefresh(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout.refreshFinish(PullToRefreshLayout.SUCCEED);
 			}
 
 			@Override
 			public void onLoadMore(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout
 						.loadmoreFinish(PullToRefreshLayout.SUCCEED);
 			}
@@ -89,12 +77,12 @@ public class SearchResultActivity extends BaseActivity implements
 		});
 
 		listView = (SwipeMenuListView) findViewById(R.id.list_view);
-		getNetData();
+		//getNetData();
 		listView.setOnItemClickListener(this);
 		listView.setOnItemLongClickListener(this);
 	}
 
-	public void getNetData() {
+	/*public void getNetData() {
 		RequestParams params = new RequestParams();
 		params.put("name", searchKey);
 		MyApp.getNet().getReq(NetConstants.getDemoListByName, params,
@@ -123,7 +111,7 @@ public class SearchResultActivity extends BaseActivity implements
 						}
 					}
 				});
-	}
+	}*/
 
 	@Override
 	public void onClick(View v) {

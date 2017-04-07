@@ -1,17 +1,16 @@
 package com.huan.demomaster.activity.news;
 
-import org.apache.http.Header;
-
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.activity.BaseActivity;
-import com.huan.demomaster.bean.News;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.huan.demomaster.MyApp;
+import com.huan.demomaster.R;
+import com.huan.demomaster.activity.BaseActivity;
+import com.huan.demomaster.bean.News;
 
 public class NewsDetailActivity extends BaseActivity implements OnClickListener {
 

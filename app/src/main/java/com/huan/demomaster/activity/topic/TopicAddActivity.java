@@ -1,26 +1,5 @@
 package com.huan.demomaster.activity.topic;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.activity.BaseActivity;
-import com.huan.demomaster.bean.News;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.utils.UserDao;
-import com.huan.demomaster.view.richtext.InterceptLinearLayout;
-import com.huan.demomaster.view.richtext.RichTextEditor;
-import com.huan.demomaster.view.richtext.RichTextFileUtils;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -28,13 +7,25 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.view.View.OnClickListener;
+import android.view.ViewTreeObserver;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+
+import com.huan.demomaster.MyApp;
+import com.huan.demomaster.R;
+import com.huan.demomaster.activity.BaseActivity;
+import com.huan.demomaster.bean.News;
+import com.huan.demomaster.view.richtext.InterceptLinearLayout;
+import com.huan.demomaster.view.richtext.RichTextEditor;
+import com.huan.demomaster.view.richtext.RichTextFileUtils;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class TopicAddActivity extends BaseActivity implements OnClickListener {
 	private final int REQUEST_CODE_CAPTURE_CAMEIA = 100;
@@ -83,7 +74,7 @@ public class TopicAddActivity extends BaseActivity implements OnClickListener {
 				news.setAuthor(MyApp.instance.getUser());
 				news.setTime(new Date());
 				news.setOriginal(isOriginal);
-				submitNews(news);
+				//submitNews(news);
 			}
 		});
 		radioGroup = (RadioGroup) findViewById(R.id.rg_isOriginal);
@@ -203,7 +194,7 @@ public class TopicAddActivity extends BaseActivity implements OnClickListener {
 	}
 
 	
-	public void submitNews(News news) {
+	/*public void submitNews(News news) {
 		showProgress("提交中...");
 		RequestParams params = new RequestParams();
 		params.put("username", UserDao.getUserName(this));
@@ -233,7 +224,7 @@ public class TopicAddActivity extends BaseActivity implements OnClickListener {
 						}
 					}
 				});
-	}
+	}*/
 
 	@Override
 	public void onClick(View v) {

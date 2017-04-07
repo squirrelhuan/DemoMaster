@@ -1,56 +1,33 @@
 package com.huan.demomaster;
 
-import java.io.File;
-
-import org.apache.http.Header;
-
-import android.app.Activity;
 import android.app.Application;
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
-import android.graphics.drawable.BitmapDrawable;
-import android.net.Uri;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup.LayoutParams;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import com.alibaba.fastjson.JSON;
 import com.huan.demomaster.bean.App;
-import com.huan.demomaster.bean.Response;
 import com.huan.demomaster.bean.User;
 import com.huan.demomaster.constances.Constants;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.net.NetControl;
 import com.huan.demomaster.utils.DialogUtils;
 import com.huan.demomaster.utils.PreferencesService;
 import com.huan.demomaster.utils.ToastUtils;
 import com.huan.demomaster.utils.XUtils;
 import com.huan.mylog.MyLog;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
+import java.io.File;
+
 public class MyApp extends Application {
 	public static String AppId = "a51f0fcbc53b417a8d090da3b29b192c";
 	public static String LOG_TAG = "CGQ";
-	private static NetControl net = null;
 	private static ToastUtils toastUtils;
 	public static ImageLoader imageLoader;
 	public static MyApp instance;
@@ -64,7 +41,6 @@ public class MyApp extends Application {
 		super.onCreate();
 		instance = this;
 		toastUtils = new ToastUtils(this);
-		net = new NetControl(getApplicationContext());
 
 		MyLog myLog = new MyLog(this);
 		myLog.initialization();
@@ -73,7 +49,7 @@ public class MyApp extends Application {
 		initDir();
 	}
 
-	public void updateApp(final Context context) {
+	/*public void updateApp(final Context context) {
 		RequestParams params = new RequestParams();
 		getVersionCode();
 		MyApp.getNet().getReq(NetConstants.Update, params,
@@ -95,7 +71,7 @@ public class MyApp extends Application {
 							Throwable arg3) {
 					}
 				});
-	}
+	}*/
 
 	private static void showUpdateAppDialog(final Context context, final App app) {
 		DialogUtils.getInstance().showPopUpWindow(context,"检测到软件有新的版本，是否立即更新？", null, new OnClickListener() {
@@ -173,10 +149,6 @@ public class MyApp extends Application {
 
 	public static PreferencesService getPreferencesService() {
 		return preferencesService = new PreferencesService(getContext());
-	}
-
-	public static NetControl getNet() {
-		return net;
 	}
 
 	public static Context getContext() {

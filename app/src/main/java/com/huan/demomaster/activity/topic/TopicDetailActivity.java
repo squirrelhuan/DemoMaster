@@ -1,41 +1,19 @@
 package com.huan.demomaster.activity.topic;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
-import com.huan.demomaster.MyApp;
-import com.huan.demomaster.R;
-import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
-import com.huan.demomaster.activity.BaseActivity;
-import com.huan.demomaster.activity.SearchActivity;
-import com.huan.demomaster.activity.demo.DemoDetailActivity;
-import com.huan.demomaster.adapter.DemoListAdapter;
-import com.huan.demomaster.adapter.EditViewWithDeleteButton;
-import com.huan.demomaster.adapter.TopicDetailAdapter;
-import com.huan.demomaster.bean.Demo;
-import com.huan.demomaster.bean.News;
-import com.huan.demomaster.bean.Plate;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.Topic;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
-import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
-import com.huan.demomaster.utils.UserDao;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
+
+import com.huan.demomaster.MyApp;
+import com.huan.demomaster.R;
+import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
+import com.huan.demomaster.activity.BaseActivity;
+import com.huan.demomaster.adapter.TopicDetailAdapter;
+import com.huan.demomaster.bean.Topic;
+import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
+import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
 
 public class TopicDetailActivity extends BaseActivity implements
 		 OnClickListener, OnItemLongClickListener {
@@ -71,24 +49,24 @@ public class TopicDetailActivity extends BaseActivity implements
 		mPullToRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
 			@Override
 			public void onRefresh(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout.refreshFinish(PullToRefreshLayout.SUCCEED);
 			}
 
 			@Override
 			public void onLoadMore(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout
 						.loadmoreFinish(PullToRefreshLayout.SUCCEED);
 			}
 		});
 
 		listView = (SwipeMenuListView) findViewById(R.id.list_view);
-		getNetData();
+		//getNetData();
 		listView.setOnItemLongClickListener(this);
 	}
 
-	public void getNetData() {
+	/*public void getNetData() {
 		RequestParams params = new RequestParams();
 		params.put("id", topic.getId());
 		MyApp.getNet().getReq(NetConstants.getTopicById, params,
@@ -117,7 +95,7 @@ public class TopicDetailActivity extends BaseActivity implements
 						}
 					}
 				});
-	}
+	}*/
 
 	@Override
 	public void onClick(View v) {

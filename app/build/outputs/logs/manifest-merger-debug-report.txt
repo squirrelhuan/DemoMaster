@@ -15,8 +15,12 @@ ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:2:1-88:12
 		ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Administrator\.android\build-cache\35007e3eaa8f212ba5855e4b27c3f043c219a60b\output\AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.android\build-cache\c347c843271b30bfc1ff8b250ce43626f2e03071\output\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Administrator\.android\build-cache\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Administrator\.android\build-cache\8a8f457b59541fbc8ff851c796db6b3588e04afb\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Administrator\.android\build-cache\9f31dde08c863e31eafdca8adc64e86366d90027\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Administrator\.android\build-cache\4818c241c11f08cde4798fb0afce760fd1d2aef5\output\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Administrator\.android\build-cache\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml
@@ -55,8 +59,10 @@ ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:20:5-67
 		ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:20:22-64
 application
 ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:22:5-86:19
-MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Administrator\.android\build-cache\35007e3eaa8f212ba5855e4b27c3f043c219a60b\output\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.android\build-cache\c347c843271b30bfc1ff8b250ce43626f2e03071\output\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Administrator\.android\build-cache\76d4adb99f4ee01371b43aa6e5b8f37c83adb01e\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Administrator\.android\build-cache\8a8f457b59541fbc8ff851c796db6b3588e04afb\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Administrator\.android\build-cache\9f31dde08c863e31eafdca8adc64e86366d90027\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Administrator\.android\build-cache\4818c241c11f08cde4798fb0afce760fd1d2aef5\output\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\workspaceAS\DemoMaster\app\src\main\AndroidManifest.xml:26:9-41
 	android:allowBackup

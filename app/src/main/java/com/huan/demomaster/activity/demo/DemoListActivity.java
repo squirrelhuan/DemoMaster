@@ -1,11 +1,13 @@
 package com.huan.demomaster.activity.demo;
 
-import java.util.ArrayList;
-import java.util.List;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
 
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
 import com.huan.demomaster.MyApp;
 import com.huan.demomaster.R;
 import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
@@ -13,29 +15,13 @@ import com.huan.demomaster.activity.BaseActivity;
 import com.huan.demomaster.activity.SearchActivity;
 import com.huan.demomaster.adapter.DemoListAdapter;
 import com.huan.demomaster.adapter.EditViewWithDeleteButton;
-import com.huan.demomaster.adapter.MySimpleGridAdapter;
-import com.huan.demomaster.bean.News;
 import com.huan.demomaster.bean.Demo;
 import com.huan.demomaster.bean.Plate;
-import com.huan.demomaster.bean.Response;
-import com.huan.demomaster.bean.User;
-import com.huan.demomaster.constances.NetConstants;
 import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
 import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DemoListActivity extends BaseActivity implements OnItemClickListener, OnClickListener, OnItemLongClickListener {
 
@@ -69,13 +55,13 @@ public class DemoListActivity extends BaseActivity implements OnItemClickListene
 		mPullToRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
 			@Override
 			public void onRefresh(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout.refreshFinish(PullToRefreshLayout.SUCCEED);
 			}
 
 			@Override
 			public void onLoadMore(PullToRefreshLayout pullToRefreshLayout) {
-				getNetData();
+				//getNetData();
 				mPullToRefreshLayout.loadmoreFinish(PullToRefreshLayout.SUCCEED);
 			}
 		});
@@ -94,11 +80,11 @@ public class DemoListActivity extends BaseActivity implements OnItemClickListene
 		}
 		adapter = new DemoListAdapter(DemoListActivity.this, mList);
 		listView.setAdapter(adapter);*/
-		getNetData();
+		//getNetData();
 		listView.setOnItemClickListener(this);
 		listView.setOnItemLongClickListener(this);
 	}
-
+/*
 	public void getNetData() {
 		RequestParams params = new RequestParams();
 		params.put("plateid", plate.getId());
@@ -127,7 +113,7 @@ public class DemoListActivity extends BaseActivity implements OnItemClickListene
 						}
 					}
 				});
-	}
+	}*/
 
 	
 	@Override

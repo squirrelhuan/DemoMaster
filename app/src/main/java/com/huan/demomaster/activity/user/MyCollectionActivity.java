@@ -1,41 +1,25 @@
 package com.huan.demomaster.activity.user;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
 
-import org.apache.http.Header;
-
-import com.alibaba.fastjson.JSON;
 import com.huan.demomaster.MyApp;
 import com.huan.demomaster.R;
 import com.huan.demomaster.SwipeMenuListView.SwipeMenuListView;
 import com.huan.demomaster.activity.BaseActivity;
-import com.huan.demomaster.activity.demo.DemoDetailActivity;
 import com.huan.demomaster.activity.news.NewsDetailActivity;
-import com.huan.demomaster.adapter.EditViewWithDeleteButton;
 import com.huan.demomaster.adapter.MySimpleListAdapter;
 import com.huan.demomaster.bean.News;
-import com.huan.demomaster.bean.Plate;
-import com.huan.demomaster.constances.NetConstants;
-import com.huan.demomaster.fragment.base.BaseFragment;
-import com.huan.demomaster.net.HttpHandler;
 import com.huan.demomaster.pullrefresh.PullToRefreshLayout;
 import com.huan.demomaster.pullrefresh.PullToRefreshLayout.OnRefreshListener;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyCollectionActivity extends BaseActivity implements 
 		OnItemClickListener, OnClickListener, OnItemLongClickListener {
